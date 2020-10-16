@@ -35,8 +35,7 @@ async function callARestaurantApi() {
         if (nameResponse.status >= 200 && nameResponse.status <= 299) {
             const length = Object.keys(JSON.parse(nameResponse.text).data).length;
            
-            // Debugging comments 
-            // console.log(`Total Restaurants:  ${length}`);
+            console.log(`Total Restaurants:  ${length}`);
             // console.log("Restaurants List");
 
             for (var i = 0; i < length; i++) {
