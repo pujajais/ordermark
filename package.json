@@ -1,0 +1,16 @@
+{
+  "name": "restaurants-list",
+  "version": "1.0.0",
+  "description": "an app for the restaurants",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "\"Puja Jaiswal\"",
+  "license": "ISC",
+  "dependencies": {
+    "inquirer": "^7.0.6",
+    "superagent": "^5.3.1",
+    "yargs": "^15.3.0"
+  }
+}
