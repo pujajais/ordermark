@@ -4,7 +4,7 @@ NodeJS applicaiton to fetch restaurant list from an API, parse the JSON to extra
 
 The app has a depedency on SuperAgent which is a module to make HTTP request. 
 
-#Files
+##Files
 
 **package.json: contains the dependecies, name, author, version etc 
 
