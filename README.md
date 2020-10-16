@@ -3,8 +3,11 @@
 NodeJS applicaiton to fetch restaurant list from an API, parse the JSON to extract the restaurant list and post that list on a Webhook. 
 
 The app has a depedency on SuperAgent which is a module to make HTTP request. 
+
 #Files
+
 **package.json: contains the dependecies, name, author, version etc 
+
 **index.js: contains the logic. It has three functions
 
     **callARestaurantApi: Make the HTTP API call and gets the response and send to the json parser
