@@ -9,8 +9,6 @@
   "author": "\"Puja Jaiswal\"",
   "license": "ISC",
   "dependencies": {
-    "inquirer": "^7.0.6",
-    "superagent": "^5.3.1",
-    "yargs": "^15.3.0"
+    "superagent": "^5.3.1"
   }
 }

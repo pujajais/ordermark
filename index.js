@@ -14,8 +14,7 @@ function parseJSON(urlRes) {
             nameResponse = JSON.parse(JSON.stringify(urlRes));
         } catch (e) {
             if (e instanceof SyntaxError) {
-                console,
-                log(e, true);
+                console.log(e, true);
             }
             else {
                 console.log(e, false);
@@ -24,6 +23,7 @@ function parseJSON(urlRes) {
     }
     return nameResponse;
 }
+
 
 //function to make the HTTP API call and return the array of restaurant names
 async function callARestaurantApi() {
@@ -34,12 +34,13 @@ async function callARestaurantApi() {
         //suuccessfull
         if (nameResponse.status >= 200 && nameResponse.status <= 299) {
             const length = Object.keys(JSON.parse(nameResponse.text).data).length;
+           
             // Debugging comments 
             // console.log(`Total Restaurants:  ${length}`);
             // console.log("Restaurants List");
 
             for (var i = 0; i < length; i++) {
-                restList[i] = (JSON.parse(nameResponse.text).data[i][8])
+                restList[i] = (JSON.parse(nameResponse.text).data[i][8]);
             }
         }
     } catch (e) {
@@ -64,7 +65,7 @@ async function postWebHook(restList) {
             console.log(err);
         });
 }
-
+//main function
 callARestaurantApi()
     .then(data => postWebHook(data))
     .catch(err => console.error(err))
