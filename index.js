@@ -24,7 +24,6 @@ function parseJSON(urlRes) {
     return nameResponse;
 }
 
-
 //function to make the HTTP API call and return the array of restaurant names
 async function callARestaurantApi() {
     const restList = [];
@@ -44,8 +43,7 @@ async function callARestaurantApi() {
         }
     } catch (e) {
         if (e instanceof SyntaxError) {
-            console,
-            log(e, true);
+            console.log(e, true);
         }
         else {
             console.log(e, false);
