@@ -19,9 +19,8 @@ The app has a depedency on SuperAgent which is a module to make HTTP request.
 
 # How to run the app
 
-(From the folder containing index.js)
 download the project. Install node
- run node index.js in the terminal
+(From the folder containing index.js) run node index.js
 
 # Output
 
